@@ -1,19 +1,47 @@
 #include<stdio.h>
-
-
+#include<stdlib.h>
+#define n 5
 
 int main(){
 
-    int arr[] = {1, 2, 3, 4, 5};
-    int n =7 ;
+    int arr[n] ;
+    for (int i = 0; i < n; i++)
+    {
+        arr[i] = (rand() % 50 +1);
+    }
+
+    
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+    
+    int user;
+    int count = 1;
+    printf("Enter value of finde:");
+    scanf("%d",&user);
 
     for (int i = 0; i < 5; i++)
     {
-        if (arr[i]==n)
+        if (arr[i]==user)
         {
-            printf("%d", i);
+            printf("value is found\n");
+            break;
+        }else{
+            count++;
         }
         
     }
-    
+
+if (arr[count-1]==user)
+{
+       printf("position is:%d\n", count);
+
+}else
+{
+    printf("position not found");
+}
+
+
 }
