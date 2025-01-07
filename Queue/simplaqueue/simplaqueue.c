@@ -38,7 +38,7 @@ int dequeue()
     }
 }
 
-int dispaly(int arr[], int n)
+int dispaly(int arr[] )
 {
     if (front == -1 && rear == -1)
     {
@@ -65,16 +65,16 @@ int main()
     enqueue(arr, e, x);
     enqueue(arr, e, x);
 
-    dispaly(arr, e);
+    dispaly(arr);
     dequeue();
     dequeue();
     dequeue();
     dequeue();
     dequeue();
 
-    dispaly(arr, e);
+    dispaly(arr);
 
     enqueue(arr, e, x);
 
-    dispaly(arr, e);
+    dispaly(arr);
 }
