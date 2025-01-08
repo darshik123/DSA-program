@@ -17,6 +17,7 @@ void enqueue(int arr[], int m, int element)
     else
     {
         rear = (rear + 1) % m;
+        
         arr[rear] = element;
     }
 }
